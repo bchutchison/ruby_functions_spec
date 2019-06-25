@@ -34,12 +34,19 @@ def add_string_as_number(x, y)
 end
 
 def number_to_full_month_name(month)
-case month
-when 1
-    return "January"
-  when 3
-    return "March"
-  when 9
-    return "September"
+  case month
+    when 1
+      return "January"
+    when 3
+      return "March"
+    when 9
+      return "September"
+  end
+end
+
+def number_to_short_month_name(short_month)
+  case short_month
+    when 1
+      return "Jan"
   end
 end
