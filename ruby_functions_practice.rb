@@ -34,9 +34,12 @@ def add_string_as_number(x, y)
 end
 
 def number_to_full_month_name(month)
-  if month == 1
+case month
+when 1
     return "January"
-  elsif month == 3
+  when 3
     return "March"
-  end    
+  when 9
+    return "September"
+  end
 end
